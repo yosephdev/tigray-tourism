@@ -1,7 +1,7 @@
 # Tourism Ethiopia
 
-# A website built as part of a video recorded for a lecture on HTML and CSS. 
+### A website built as part of a video recorded for a lecture on HTML and CSS. 
 
-# It was recorded for Barmaga.io. 
+### It was recorded for Barmaga.io. 
 
-# The lanaguage used is Amharic.
+### The lanaguage used is Amharic.
