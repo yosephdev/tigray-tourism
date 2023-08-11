@@ -1,6 +1,6 @@
 # Tourism Ethiopia
 
-![Tourism Ethiopia](assets/images/ethiopia-tourism) 
+![Tourism Ethiopia](assets/images/EthiopiaToursim.png) 
 
 Welcome to the **Tourism Ethiopia** project repository! This website was developed as part of a video lecture on HTML and CSS, which was created for [Barmaga.io](https://www.barmaga.io/). The content of the lecture is in the Amharic language.
 
@@ -33,7 +33,7 @@ Contributions to this project are welcome! If you have ideas for improvements, s
 
 For any inquiries or collaboration opportunities, you can reach out to the project creator:
 
-       Email: contact@yoseph.dev
+    Email: contact@yoseph.dev
    
 Thank you for your interest in the Tourism Ethiopia project!
 
