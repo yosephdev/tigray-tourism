@@ -2,24 +2,27 @@
 <html lang="am" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <!-- sets the character set your document should use to utf-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- title tag defines what is shown on the tab of the browser -->
-    <title>Ethiopia Toursim</title>
+    <title>Ethiopia Tourism</title>
     <link rel="stylesheet" href="assets/style/reset.css" />
     <link rel="stylesheet" href="assets/style/main.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
-    <nav class="main-nav">
-      <ul class="max-lg">
-        <li><a href="">መነሻ ገጽ</a></li>
-        <li><a href="">ጉዞዎች</a></li>
-        <li><a href="">አስተያየትዎን ይላኩልን</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Ethiopia Tourism</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">መነሻ ገጽ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">ጉዞዎች</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">አስተያየትዎን ይላኩልን</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Travel Tips</a></li>
+        </ul>
+      </div>
     </nav>
     <main>
-      <section id="hero">
+      <section id="hero" class="text-center">
         <div class="title">
           <h1>ቱሪዝም ኢትዮጵያ</h1>
           <p>#GoBackToAfrica</p>
@@ -135,18 +138,18 @@
         <h2>ቱሪዝም ኢትዮጵያን ያግኙ</h2>
         <div>
           <label for="name">ስም (የግድ የሚያስፈልግ)</label>
-          <input id="name" name="name" type="text" />
+          <input id="name" name="name" type="text" required />
         </div>
         <div>
           <label for="email">የኢሜይል አድራሻዎት (የግድ የሚያስፈልግ)</label>
-          <input id="email" name="email" type="text" />
+          <input id="email" name="email" type="email" required />
         </div>
         <div>
           <label for="message">መልእክት (የግድ የሚያስፈልግ)</label>
-          <textarea id="message" name="message" rows="5" cols="50"></textarea>
+          <textarea id="message" name="message" rows="5" cols="50" required></textarea>
         </div>
         <div>
-          <button type="submit" onclick="alert('አመሰግናለሁ!')>ላክ</button>
+          <button type="submit" onclick="alert('አመሰግናለሁ!')">ላክ</button>
         </div>
       </form>
     </footer>

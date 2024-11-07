@@ -122,6 +122,7 @@ a {
   color: #e5e5e5;
 }
 
+/* button styles */
 button,
 .button,
 input[type="submit"] {
@@ -208,7 +209,6 @@ button {
 }
 
 /* footer */
-
 footer {
   padding: 2em 0.6em;
   background-color: #525866;
@@ -220,7 +220,7 @@ footer h2 {
   font-weight: 900;
 }
 
-footer form>div {
+footer form > div {
   margin: 0.5em;
 }
 
@@ -236,7 +236,6 @@ footer textarea {
 }
 
 @media (min-width: 30em) {
-
   footer input,
   footer textarea {
     width: 30%;
