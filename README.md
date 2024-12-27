@@ -1,39 +1,40 @@
-# Tourism Ethiopia
+# ቱሪዝም ትግራይ
 
-![Tourism Ethiopia](assets/images/EthiopiaToursim.png) 
+![ቱሪዝም ትግራይ](assets/images/TigrayTourism.png) 
 
-Welcome to the **Tourism Ethiopia** project repository! This website was developed as part of a video lecture on HTML and CSS, which was created for [Barmaga.io](https://www.barmaga.io/). The content of the lecture is in the Amharic language.
+እንኳን ወደ **ቱሪዝም ትግራይ** ፕሮጀክት ማህደር በደህና መጡ! እዚ ድህረ ገጽ እንተ ክፍሊ ናይ ቪድዮ ትምህርቲ ናይ HTML እና CSS እዩ ዝተወሲዱ፡፡ እዚ ትምህርቲ ብ [Barmaga.io](https://www.barmaga.io/) ዝተዘርዎ እዩ፡፡ ዝርዝር ትምህርቲ ብቋንቋ ትግርኛ እዩ፡፡
 
-## About the Project
+## ብዛዕባ ፕሮጀክት
 
-The **Tourism Ethiopia** website serves as an example of creating a simple yet functional website using HTML and CSS. The project demonstrates best practices in web development, showcasing how to structure content and style elements to create an appealing and user-friendly interface.
+ድህረ ገጽ **ቱሪዝም ትግራይ** እንተ ምሳሌ ናይ ምፍጣር ቀሊል እና ዝምልከት ዝተሰርሐ ድህረ ገጽ ብ HTML እና CSS እዩ፡፡ እዚ ፕሮጀክት ብምምልካት ናይ ምፍጣር ምምሕዳር ዝምልከት ምሳሌ ይሃብ፡፡
 
-## Project Highlights
+## ዝተለዩ ኣካላት ፕሮጀክት
 
-- **Language:** Amharic
-- **Platform:** Web
-- **Lecture Host:** [Barmaga.io](https://www.barmaga.io/)
+- **ቋንቋ:** ትግርኛ
+- **መድረኽ:** ድህረ ገጽ
+- **ኣስተምህሪ ትምህርቲ:** [Barmaga.io](https://www.barmaga.io/)
 
-## Getting Started
+## ዝተለዩ ኣካላት ፕሮጀክት
 
-To view the website or explore its code, follow these steps:
+እዚ ድህረ ገጽ ምርኣይ ወይ ኮድ ምምርካብ እንተ ደሊኹም እዚ መልእኽቲ ተኸቲ እትዕወት ኣለኹም፡፡
 
-1. Clone this repository to your local machine.
+1. እዚ ማህደር ናብ ኣካል ኣብ ኣካል እንተ ደሊኹም ተኸቲ እትዕወት፡፡
    
    ```shell
-   git clone https://github.com/YourUsername/Tourism-Ethiopia.git
+   git clone https://github.com/YourUsername/Tigray-Tourism.git
+   ```
+
+2. ፋይል index.html ኣብ ዝተፈላለዩ ናይ ድህረ ገጽ ምርኣይ እንተ ደሊኹም ክፈቱ፡፡
+
+## ምምሕዳርን ኣስተያየትን
+
+ናይ እዚ ፕሮጀክት ምምሕዳር እንተ ደሊኹም እንተ ኣለኹም ሓሳብ ናይ ምምሕዳር ወይ እንተ ኣለኹም ጸገም እትረኽቡ እትዕወት ኣለኹም፡፡ ኣስተያየትኩም ኣንቀጽ እንተ ደሊኹም እዚ ፕሮጀክት ክምልከት ይረኽብኩም፡፡
+
+## ርእይቶን ምምሕዳርን
+
+እንተ ኣለኹም ሕቶታት ወይ ኣብ ምምሕዳር እንተ ደሊኹም ኣብ ፕሮጀክት ኣብ እዚ ኣድራሻ እትረኽቡ እትዕወት፡፡
+
+    ኢሜይል: contact@yoseph.dev
    
-2. Open the index.html file in your preferred web browser to view the website.
-
-## Contributions and Feedback
-
-Contributions to this project are welcome! If you have ideas for improvements, suggestions, or you find any issues, feel free to open an issue or submit a pull request. Your feedback is valuable and will help enhance the project.
-
-## Contact
-
-For any inquiries or collaboration opportunities, you can reach out to the project creator:
-
-    Email: contact@yoseph.dev
-   
-Thank you for your interest in the Tourism Ethiopia project!
+ኣብ ፕሮጀክት ቱሪዝም ትግራይ ዝተፈላለዩ ኣመሰግናለይ፡፡
 
