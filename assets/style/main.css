@@ -1,4 +1,4 @@
-/* fonts */
+/* Fonts */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -17,26 +17,20 @@
     url("../fonts/montserrat-v15-latin-900.woff") format("woff");
 }
 
-/* Base styles */
+/* Variables */
 :root {
-  /* Primary Colors - inspired by Tigray traditional colors */
-  --primary-color: #8B4513;     /* Reddish brown - inspired by Tigray's terrain */
-  --secondary-color: #CD853F;   /* Golden brown - inspired by ancient churches */
-  
-  /* Accent Colors */
-  --accent-1: #DAA520;         /* Golden color - representing historical heritage */
-  --accent-2: #800000;         /* Deep red - traditional Tigray textile color */
-  
-  /* Neutral Colors */
-  --text-color: #333333;       /* Dark gray for text */
-  --light-bg: #F5F5DC;         /* Light beige background */
-  --white: #FFFFFF;            /* Pure white */
-  
-  /* Additional Colors */
-  --footer-bg: #4A3728;        /* Dark brown for footer */
-  --hover-color: #B8860B;      /* Darker gold for hover states */
+  --primary-color: #8B4513;
+  --secondary-color: #CD853F;
+  --accent-1: #DAA520;
+  --accent-2: #800000;
+  --text-color: #333333;
+  --light-bg: #F5F5DC;
+  --white: #FFFFFF;
+  --footer-bg: #4A3728;
+  --hover-color: #B8860B;
 }
 
+/* Base styles */
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
@@ -79,7 +73,7 @@ body {
   color: var(--white);
   text-align: center;
   padding: 0 1rem;
-  background-attachment: fixed; /* Parallax effect */
+  background-attachment: fixed;
 }
 
 #hero .title {
@@ -99,7 +93,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* Section Styles */
+/* Section Titles */
 .section-title {
   text-align: center;
   font-size: 2.5rem;
@@ -121,7 +115,7 @@ body {
   background-color: var(--secondary-color);
 }
 
-/* Featured Sections */
+/* Featured Sections & Trips */
 .featured {
   padding: 4rem 2rem;
 }
@@ -139,24 +133,44 @@ body {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .trips article:hover {
   transform: translateY(-5px);
 }
 
+/* Image Styles */
 .trips img {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  transition: transform 0.3s ease;  
-  min-height: 100px;     /* Ensure visible height */
+  transition: transform 0.3s ease;
+  min-height: 100px;
+  opacity: 1;
+  loading: "lazy";
 }
 
 .trips img:hover {
   transform: scale(1.05);
 }
 
+.image-placeholder {
+  background: linear-gradient(
+    45deg,
+    var(--light-bg) 25%,
+    var(--white) 25%,
+    var(--white) 50%,
+    var(--light-bg) 50%,
+    var(--light-bg) 75%,
+    var(--white) 75%,
+    var(--white) 100%
+  );
+  background-size: 56.57px 56.57px;
+  min-height: 200px;
+}
+
+/* Content Styles */
 .trips .summary {
   padding: 1.5rem;
 }
@@ -172,6 +186,7 @@ body {
   color: #666;
 }
 
+/* Buttons */
 .button {
   display: inline-block;
   padding: 0.8rem 1.5rem;
@@ -188,7 +203,7 @@ body {
   text-decoration: none;
 }
 
-/* Footer/Contact Form */
+/* Footer */
 footer {
   background-color: var(--primary-color);
   color: var(--white);
@@ -233,23 +248,22 @@ footer button:hover {
   background-color: #c0392b;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-  
-  #hero p {
-    font-size: 1.2rem;
-  }
-  
-  .section-title {
-    font-size: 2rem;
-  }
-  
-  .featured {
-    padding: 2rem 1rem;
-  }
+/* Copyright */
+.copyright {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.copyright a {
+  color: var(--accent-1);
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  text-decoration: underline;
+  color: var(--light-bg);
 }
 
 /* Animations */
@@ -264,23 +278,27 @@ footer button:hover {
   }
 }
 
-.trips article {
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
 /* Accessibility */
 :focus {
   outline: 3px solid var(--secondary-color);
   outline-offset: 2px;
 }
 
+/* Media Queries */
+@media (max-width: 768px) {
+  #hero h1 { font-size: 2.5rem; }
+  #hero p { font-size: 1.2rem; }
+  .section-title { font-size: 2rem; }
+  .featured { padding: 2rem 1rem; }
+  .trips { grid-template-columns: 1fr; }
+  .trips img { height: 200px; }
+}
+
 /* Print Styles */
 @media print {
   .navbar,
   .button,
-  footer {
-    display: none;
-  }
+  footer { display: none; }
   
   #hero {
     height: auto;
@@ -290,108 +308,4 @@ footer button:hover {
   .trips article {
     break-inside: avoid;
   }
-}
-
-/* Lazy Loading for Images */
-.trips img {
-  loading: "lazy";
-}
-
-/* Image Placeholder Style */
-.image-placeholder {
-  background: linear-gradient(
-    45deg,
-    var(--light-bg) 25%,
-    var(--white) 25%,
-    var(--white) 50%,
-    var(--light-bg) 50%,
-    var(--light-bg) 75%,
-    var(--white) 75%,
-    var(--white) 100%
-  );
-  background-size: 56.57px 56.57px;
-}
-
-/* Image loading animations */
-.trips img {
-    opacity: 1;
-    transition: opacity 0.3s ease-in;
-}
-
-.trips img.loaded {
-    opacity: 1;
-}
-
-/* Placeholder styling */
-.image-placeholder {
-    background: linear-gradient(
-        45deg,
-        var(--light-bg) 25%,
-        var(--white) 25%,
-        var(--white) 50%,
-        var(--light-bg) 50%,
-        var(--light-bg) 75%,
-        var(--white) 75%,
-        var(--white) 100%
-    );
-    background-size: 56.57px 56.57px;
-    min-height: 200px;
-}
-
-/* Add a data URI placeholder */
-.trips img[src=""] {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect fill="%23f5f5dc" width="100" height="100"/><text fill="%23666" x="50%" y="50%" text-anchor="middle" dy=".3em">Loading...</text></svg>');
-    background-size: cover;
-}
-
-/* Add these base styles to override reset */
-body {
-    line-height: 1.6;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.trips {
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.trips article {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.trips img {
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.summary {
-    padding: 1rem;
-}
-
-.summary h2 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.copyright {
-    text-align: center;
-    padding: 1rem 0;
-    margin-top: 2rem;
-    border-top: 1px solid #eee;
-}
-
-.copyright a {
-    color: var(--accent-1);
-    text-decoration: none;
-}
-
-.copyright a:hover {
-    text-decoration: underline;
-    color: var(--light-bg);
 }
