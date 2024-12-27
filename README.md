@@ -19,9 +19,9 @@
 እዚ ፕሮጀክት ንምጥቃም ወይ ኮድ ንምርካብ እዞም ዝስዕቡ ስጉምትታት ተኸተሉ፡
 
 1. እዚ ማህደር ናብ ኮምፒውተርኩም ንምውራድ:
-   
+
    ```shell
-   git clone https://github.com/YourUsername/Tigray-Tourism.git
+   git clone https://github.com/yosephdev/Tigray-Tourism.git
    ```
 
 2. ፋይል index.html ኣብ ዝተለኹሞ ብራውዘር ክፈትዎ።
