@@ -59,13 +59,32 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">ቱሪዝም ትግራይ</a>
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
+      <!-- Hamburger menu button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="#home">መጀመርታ ገጽ</a></li>
           <li class="nav-item"><a class="nav-link" href="#historical">ታሪኻዊ ቦታታት</a></li>
           <li class="nav-item"><a class="nav-link" href="#churches">ቤተ-ክርስትያናት</a></li>
           <li class="nav-item"><a class="nav-link" href="#nature">ተፈጥሮኣዊ ቦታታት</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">ርኸቡና</a></li>
+        </ul>
+        <!-- Additional links -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="https://ternafit.org" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-external-link-alt"></i> Ternafit NGO
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://ternafit.org/blog" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-blog"></i> Blog
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -297,5 +316,12 @@
         <p>&copy; 2024 ቱሪዝም ትግራይ | Developed by <a href="https://yoseph.dev" target="_blank" rel="noopener noreferrer">yoseph.dev</a></p>
       </div>
     </footer>
+
+    <!-- Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
   </body>
 </html>
