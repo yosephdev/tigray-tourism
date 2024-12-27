@@ -1,252 +1,380 @@
 /* fonts */
-
-/* montserrat-regular - latin */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   src: local(""),
     url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
     url("../fonts/montserrat-v15-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* montserrat-900 - latin */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/montserrat-v15-latin-900.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
+  src: local(""), 
+    url("../fonts/montserrat-v15-latin-900.woff2") format("woff2"),
     url("../fonts/montserrat-v15-latin-900.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* raleway-regular - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 400;
-  src: local(""),
-    url("assets/fonts/raleway-v19-latin-regular.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("assets/fonts/raleway-v19-latin-regular.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* Base styles */
+:root {
+  /* Primary Colors - inspired by Tigray traditional colors */
+  --primary-color: #8B4513;     /* Reddish brown - inspired by Tigray's terrain */
+  --secondary-color: #CD853F;   /* Golden brown - inspired by ancient churches */
+  
+  /* Accent Colors */
+  --accent-1: #DAA520;         /* Golden color - representing historical heritage */
+  --accent-2: #800000;         /* Deep red - traditional Tigray textile color */
+  
+  /* Neutral Colors */
+  --text-color: #333333;       /* Dark gray for text */
+  --light-bg: #F5F5DC;         /* Light beige background */
+  --white: #FFFFFF;            /* Pure white */
+  
+  /* Additional Colors */
+  --footer-bg: #4A3728;        /* Dark brown for footer */
+  --hover-color: #B8860B;      /* Darker gold for hover states */
 }
 
-/* raleway-900 - latin */
-@font-face {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 900;
-  src: local(""),
-    url("assets/fonts/raleway-v19-latin-900.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url("assets/fonts/raleway-v19-latin-900.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* base styles */
 body {
-  font-size: 16px;
-  font-family: Montserrat;
-  line-height: 1.4;
-  color: #525866;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--light-bg);
 }
 
-h1 {
-  font-size: 2em;
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
 }
 
-h2 {
-  font-size: 1.4em;
-}
-
-a {
-  text-decoration: none;
-  color: #473335;
-}
-
-/* navbar area */
-.main-nav {
-  font-family: Montserrat;
-  background-color: #525866;
-  font-size: 1.2em;
+.navbar-brand {
   font-weight: 900;
-  padding: 1em 0;
+  font-size: 1.5rem;
+  color: var(--primary-color) !important;
 }
 
-.main-nav a {
-  color: #ffffff;
+.nav-link {
+  font-weight: 500;
+  color: var(--text-color) !important;
+  transition: color 0.3s ease;
 }
 
-.main-nav ul {
+.nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* Hero Section */
+#hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/hero/tigray-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
   display: flex;
   align-items: center;
-}
-
-.main-nav ul li {
-  padding: 0 1em;
-  border-right: 1px solid #e5e5e5;
-}
-
-/* hero area */
-#hero {
-  background-color: #525866;
-  background-image: url("../images/big-addis.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 120px;
+  justify-content: center;
+  color: var(--white);
   text-align: center;
-  min-height: 400px;
-  font-family: Montserrat;
+  padding: 0 1rem;
+  background-attachment: fixed; /* Parallax effect */
 }
 
 #hero .title {
-  background-color: #525866;
-  color: #ffffff;
-  margin-bottom: 20px;
-  padding: 40px;
-  opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
 }
 
-#hero .title h1 {
-  font-size: 2em;
-  line-height: 80px;
+#hero h1 {
+  font-size: 3.5rem;
   font-weight: 900;
+  margin-bottom: 1rem;
 }
 
-#hero .subtitle {
-  margin: 40px 0px;
-  color: #e5e5e5;
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
-/* button styles */
-button,
-.button,
-input[type="submit"] {
-  font-family: Montserrat;
-  background-color: #ff9000;
-  color: #14213d;
-  border: 0;
-  padding: 0.25em 1em;
-  font-size: 1.4em;
-  font-weight: 400;
-  border-radius: 0.25em;
+/* Section Styles */
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  margin: 3rem 0;
+  padding-bottom: 1rem;
+  position: relative;
 }
 
-button {
-  width: 31%;
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: var(--secondary-color);
 }
 
-/* Featured Trips area */
-.title {
-  font-size: 1.4em;
-  margin: 1em 0;
-}
-
+/* Featured Sections */
 .featured {
-  background-color: #fff;
-  padding: 0.6em;
-}
-
-.max-lg {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.featured h1 {
-  margin: 2.2em 0;
-  font-family: Raleway;
+  padding: 4rem 2rem;
 }
 
 .trips {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
 }
 
 .trips article {
-  max-width: 100%;
-  margin: 0.25em;
-  border: 1px solid #e5e5e5;
-  border-radius: 0.6em;
-  padding-bottom: 0.8em;
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-@media (min-width: 30em) {
-  .trips article {
-    max-width: 30%;
-  }
-}
-
-.trips .summary a {
-  float: right;
-  font-size: 1.1em;
-}
-
-.trips .summary h3 {
-  font-family: Raleway;
-  font-size: 1.4rem;
-  margin: 0.6em 0;
-}
-
-.trips .summary {
-  margin: 0.5em;
+.trips article:hover {
+  transform: translateY(-5px);
 }
 
 .trips img {
   width: 100%;
-  height: 200px;
-  border-top-left-radius: 0.25em;
-  border-top-right-radius: 0.25em;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;  
+  min-height: 100px;     /* Ensure visible height */
 }
 
-.trips .button {
-  font-size: 0.9em;
-  padding: 0.5em;
+.trips img:hover {
+  transform: scale(1.05);
 }
 
-/* footer */
+.trips .summary {
+  padding: 1.5rem;
+}
+
+.trips h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.trips p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #c0392b;
+  color: var(--white);
+  text-decoration: none;
+}
+
+/* Footer/Contact Form */
 footer {
-  padding: 2em 0.6em;
-  background-color: #525866;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 4rem 2rem;
 }
 
 footer h2 {
-  color: #fff;
   text-align: center;
-  font-weight: 900;
+  margin-bottom: 2rem;
 }
 
-footer form > div {
-  margin: 0.5em;
+footer form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 footer label {
-  color: #fff;
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 footer input,
 footer textarea {
-  padding: 0.5em;
   width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
 }
 
-@media (min-width: 30em) {
-  footer input,
-  footer textarea {
-    width: 30%;
-  }
+footer button {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  footer textarea {
-    width: 50%;
-  }
+footer button:hover {
+  background-color: #c0392b;
+}
 
-  footer input[type="submit"] {
-    width: 20%;
-    padding: 0px;
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem;
   }
+  
+  #hero p {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .featured {
+    padding: 2rem 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trips article {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Accessibility */
+:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .button,
+  footer {
+    display: none;
+  }
+  
+  #hero {
+    height: auto;
+    padding: 2rem;
+  }
+  
+  .trips article {
+    break-inside: avoid;
+  }
+}
+
+/* Lazy Loading for Images */
+.trips img {
+  loading: "lazy";
+}
+
+/* Image Placeholder Style */
+.image-placeholder {
+  background: linear-gradient(
+    45deg,
+    var(--light-bg) 25%,
+    var(--white) 25%,
+    var(--white) 50%,
+    var(--light-bg) 50%,
+    var(--light-bg) 75%,
+    var(--white) 75%,
+    var(--white) 100%
+  );
+  background-size: 56.57px 56.57px;
+}
+
+/* Image loading animations */
+.trips img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.trips img.loaded {
+    opacity: 1;
+}
+
+/* Placeholder styling */
+.image-placeholder {
+    background: linear-gradient(
+        45deg,
+        var(--light-bg) 25%,
+        var(--white) 25%,
+        var(--white) 50%,
+        var(--light-bg) 50%,
+        var(--light-bg) 75%,
+        var(--white) 75%,
+        var(--white) 100%
+    );
+    background-size: 56.57px 56.57px;
+    min-height: 200px;
+}
+
+/* Add a data URI placeholder */
+.trips img[src=""] {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100"><rect fill="%23f5f5dc" width="100" height="100"/><text fill="%23666" x="50%" y="50%" text-anchor="middle" dy=".3em">Loading...</text></svg>');
+    background-size: cover;
+}
+
+/* Add these base styles to override reset */
+body {
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.trips {
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.trips article {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.trips img {
+    display: block;  /* Important! */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.summary {
+    padding: 1rem;
+}
+
+.summary h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
