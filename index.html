@@ -1,155 +1,171 @@
 <!DOCTYPE html>
-<html lang="am" dir="ltr">
+<html lang="ti" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ethiopia Tourism</title>
+    <title>ቱሪዝም ትግራይ</title>
     <link rel="stylesheet" href="assets/style/reset.css" />
     <link rel="stylesheet" href="assets/style/main.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {      
+        document.querySelectorAll('.trips img').forEach(img => {
+            img.loading = 'lazy';
+            img.onerror = function() {
+                this.src = 'assets/images/placeholder-image.png';
+            }
+        });
+    });
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Ethiopia Tourism</a>
+      <a class="navbar-brand" href="#">ቱሪዝም ትግራይ</a>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="#">መነሻ ገጽ</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">ጉዞዎች</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">አስተያየትዎን ይላኩልን</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Travel Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#home">መጀመርታ ገጽ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#historical">ታሪኻዊ ቦታታት</a></li>
+          <li class="nav-item"><a class="nav-link" href="#churches">ቤተ-ክርስትያናት</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nature">ተፈጥሮኣዊ ቦታታት</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">ርኸቡና</a></li>
         </ul>
       </div>
     </nav>
     <main>
       <section id="hero" class="text-center">
         <div class="title">
-          <h1>ቱሪዝም ኢትዮጵያ</h1>
-          <p>#GoBackToAfrica</p>
+          <h1>ቱሪዝም ትግራይ</h1>
+          <p>ናብ ታሪኻዊት ትግራይ እንኳዕ ብደሓን መጻእኩም</p>
         </div>
       </section>
 
-      <section id="trips" class="featured max-lg">
-        <h2 class="title">የአዲስ አበባ ከተማ የአንድ ቀን ጉብኝት</h2>
+      <section id="historical" class="featured max-lg">
+        <h2 class="section-title">ታሪኻዊ ቦታታት</h2>
         <div class="trips">
           <article>
             <img
-              alt="የኢትዮጵያ ብሄራዊ ሙዚየም"
-              src="assets/images/national-museum-addis-ababa.jpg"
-            />
+              alt="ኣኽሱም"
+              src="assets/images/historical/axum-obelisk.jpg"
+              loading="lazy"
+            />            
             <div class="summary">
-              <h2>የኢትዮጵያ ብሄራዊ ሙዚየም</h2>
+              <h2>ኣኽሱም</h2>
               <p>
-                የኢትዮጵያ ብሄራዊ ሙዚየም አዲስ አበባ ውስጥ ከሚገኙ መጎብኘት ካለባቸው ቦታዎች ውስጥ በቀዳሚነት
-                የሚጠቀስ ነው፡፡ ኢትዮጵያ ብሄራዊ ሙዚየምን ልዩ ከሚያደርጉት ነገሮች ዋናው የሉሲ ወይም ድንቅነሽ
-                ዐጽም (ቅሪተ አካልን) መያዙ ነው፡፡ ሉሲ ወይም ድንቅነሽ በኢትዮጵያ (ሃዳር፤ አፋር) የተገኘች ከ3
-                ሚሊዮን አመት በላይ ያስቆጠረች ናት፡፡
+                ኣኽሱም፡ ናይ ጥንታዊት ኣኽሱማዊት መንግስቲ ርእሰ ከተማ እያ። እዛ ከተማ ብታሪኻዊ ሓወልትታት፣ ብፍላይ ድማ 
+                ብኣኽሱም ሓወልቲ (Obelisk) ትፍለጥ። ኣብ ውሽጢ እዛ ከተማ ቤተ-ክርስትያን ጽዮን ማርያም፣ ናይ ሳባ ቤተ-መንግስቲ፣ 
+                ከምኡ'ውን ካልኦት ብዙሓት ታሪኻውያን ቦታታት ይርከቡ።
               </p>
-              <a class="button" href="https://en.wikipedia.org/wiki/National_Museum_of_Ethiopia">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
-              alt="ቅድስት ስላሴ ካቴድራል"
-              src="assets/images/holy-trinity-cathedral-addis-ababa.jpg"
+              alt="ደብረ ዳሞ"
+              src="assets/images/historical/debre-damo.jpg"
             />
             <div class="summary">
-              <h2>ቅድስት ስላሴ ካቴድራል</h2>
+              <h2>ደብረ ዳሞ</h2>
               <p>
-                ቅድስት ስላሴ ካቴድራል አጼ ሃይለ ስላሴ በስደት ከነበሩበት እንግሊዝ ሲመለሱ ያስገነቡት ነው፡፡ ስላሴ
-                ካቴድራልን የተለየ የሚያደርው ውብ ስነ ህንጻው፣ ከምስረታው ጋር የተያያዘው ታሪኩ፣ በቀለማት
-                ያሸበረቁት የመስታወት መስኮቶቹ፣ የግድግዳ ላይ ሰእሎቹ እና ሙዚየሙ ይገኙበታል፡፡ ታዋቂ ለሆኑ
-                ኢትዮጵያውያን የቀብር ቦታ በመሆኑም ይታወቃል፡፡
+                ደብረ ዳሞ፡ ኣብ ልዕሊ ጸዳፍ ዓቢይ ኣምባ ዝተሃንጸት ታሪኻዊት ገዳም እያ። እዛ ገዳም ብ6ይ ክፍለ ዘመን 
+                ዝተሃንጸት ኮይና፣ ናብ ደብረ ዳሞ ንምብጻሕ ብገመድ ጥራይ እዩ ዝካኣ። ደብረ ዳሞ ብጥንታዊ ኣገባብ ህንጻን ብሃይማኖታዊ 
+                ጽሑፋትን ትፍለጥ።
               </p>
-              <a class="button" href="https://en.wikipedia.org/wiki/Holy_Trinity_Cathedral_(Addis_Ababa)">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
-              alt="ኤትኖግራፊ ሙዚየም"
-              src="assets/images/ethnological-museum-addis-ababa.jpg"
+              alt="የሃ ቅዱስ ሚካኤል"
+              src="assets/images/historical/yeha-temple.avif"
             />
             <div class="summary">
-              <h2>ኤትኖሎጂካል (ኤትኖግራፊ) ሙዚየም</h2>
+              <h2>የሃ ቅዱስ ሚካኤል</h2>
               <p>
-                ይህ ኤትኖሎጂካል ወይም ኤትኖግራፊ ሙዚየም አዲስ አበባ ዩኒቨርሲቲ 6 ኪሎ ካምፓስ ግቢ ውስጥ
-                ይገኛል፡፡ ቀዳማዊ አጼ ሃይለ ስላሴ በዚህ ግቢ ውስጥ ለብዙ አመታት ኖረዋል። ይህ ሙዚየም ስለ
-                ኢትዮጵያ ታሪክ፣ ህዝብ፣ ተፈጥሮ፣ ሃይማኖት፣ ባህል እንዲሁም አጠቃላይ መረጃ ለማግኘት በጣም
-                ይጠቅማል። ኵሎ አመክሩ ወዘሠናየ አጽንዑ።
+                የሃ፡ ኣብ ትግራይ ዝርከብ ዝቖየመ ህንጻ እዩ። እዚ ህንጻ ካብ ክርስቶስ ቅድሚ ልደት ብ700 ዓ.ም. ዝተሃንጸ 
+                ኮይኑ፣ ብጥንታዊ የመናዊ ስነ-ህንጻ ዝተሃንጸ እዩ። ሎሚ መዓልቲ ናይ ኦርቶዶክስ ቤተ-ክርስትያን እዩ።
               </p>
-              <a class="button" href="https://en.wikipedia.org/wiki/Ethnological_Museum,_Addis_Ababa">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
+        </div>
+      </section>
 
+      <section id="churches" class="featured max-lg">
+        <h2 class="section-title">ጥንታውያን ቤተ-ክርስትያናት</h2>
+        <div class="trips">
           <article>
-            <img alt="እንጦጦ ተራራ" src="assets/images/skate-addis.jpg" />
+            <img
+              alt="ኣቡነ የማታ"
+              src="assets/images/churches/abune-yemata.jpg"
+            />
             <div class="summary">
-              <h2>እንጦጦ ተራራ</h2>
+              <h2>ኣቡነ የማታ ጉህ</h2>
               <p>
-                ቀጣዩ የአዲስ አበባ ጉብኝት እንጦጦ ተራራ ውስጥ በመቆም የአዲስ አበባን ውበት ከ3200 ሜትር ከፍታ
-                ላይ ሆኖ ማየት ነው። በእንጦጦ ተራራ ላይ ከአንድ ቤተሰብ ጋር የ አንድ ሰአት ከግማሽ የሚሆን ቆይታ
-                ይኖርዎታል። በዚህ ጉብኝት ባህላዊ የኢትዮጵያ የቡና ማፍላት ስነስርዐት ይታደማሉ፡፡ የኢትዮጵያ መለያ
-                የሆነውን እንጀራ እንዴት እንድሚጋገር ይማራሉ። የኢትዮጵያ ባህላዊ መጠጦች የሆኑትን ጠላ እና ጠጅ
-                እንዴት እንደሚዘጋጁም ያያሉ።
+                ኣብ ልዕሊ ዓቢይ ኣምባ ዝተሃንጸት ቤተ-ክርስትያን እያ። ናብዛ ቤተ-ክርስትያን ንምብጻሕ ብርቱዕ ጻዕሪ 
+                የድሊ። ኣብ ውሽጣ ዘለዉ ጥንታውያን ስእልታት ብጣዕሚ ብሉጻት እዮም።
               </p>
-              <a class="button" href="https://en.wikipedia.org/wiki/Entoto_Mountains">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
-              alt="አንድነት ፓርክ"
-              src="assets/images/unity-park-addis-ababa.jpg"
+              alt="ደብረ ጽዮን"
+              src="assets/images/churches/debre-tsion.jpg"
             />
             <div class="summary">
-              <h2>አንድነት ፓርክ</h2>
+              <h2>ደብረ ጽዮን</h2>
               <p>
-                አንድነት ፓርክ በታላቁ ቤተ መንግሥት ግቢ ውስጥ የሚገኝ ሲሆን በውስጡም ልዩ ልዩ የታሪክ፣የተፈጥሮ
-                እና የባሕል መስህቦችን አጠቃሎ የያዘ ነው፡፡ ፓርኩ በውስጡ ሦስት ዋነኛ የቱሪስት መስህቦች
-                ይገኙበታል። ማንኛውም ዜጋ 200 ብር እንዲሁም በቪአይፒ (VIP) 1 ሺህ ብር በመክፈል ቤተ
-                መንግስቱን መጎብኘት ይችላል፡፡ 1000 ብር የሚከፍሉ ጎብኝዎች ታሪካዊ ቁሳቁስ የሚገኙበትንና ሌሎች
-                እንግዶች እንዲያዩ ያልተፈቀደላቸው ስፍራ መጎብኘት ይችላል፡፡
+                ደብረ ጽዮን ካብተን ዝቖየማ ቤተ-ክርስትያናት ሓንቲ እያ። ብፍሉይ ናይ ግድግዳ ስእልታትን ጥንታዊ 
+                መጻሕፍትን ትፍለጥ። እዛ ቤተ-ክርስትያን ብ10ይ ክፍለ ዘመን ዝተሃንጸት እያ።
               </p>
-              <a class="button" href="https://www.unitypark.et/">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
+        </div>
+      </section>
 
+      <section id="nature" class="featured max-lg">
+        <h2 class="section-title">ተፈጥሮኣዊ ቦታታት</h2>
+        <div class="trips">
           <article>
-            <img alt="መርካቶ ገበያ" src="assets/images/scene-from-merkato.jpg" />
+            <img
+              alt="ገረልታ"
+              src="assets/images/nature/gheralta.webp"
+            />
             <div class="summary">
-              <h2>መርካቶ ገበያ</h2>
+              <h2>ገረልታ ኣምባታት</h2>
               <p>
-                ታዋቂው እና ግዙፉ የመርካቶ ገበያ በአፍሪካ ትልቁ ክፍት (ህንጻ ውስጥ ያልሆነ) ገበያ ነው።
-                13,000 በላይ ሠዎችን በ7,100 የሚደርሡ የንግድ ሠቆች ውስጥ የያዘ እንደሆነ ይገመታል። በዚህ
-                ገበያ ውስጥ በአብዛሃኛው ጊዜ የሚዘወተሩት በተለምዶ ሀገር በቀል የሆኑ የጥራጥሬ ምግቦች እና
-                ፍራፍሬዎች እንዲሁም በዋነኛነት ቡና ናቸው። ቅመም ተራ፣ ጫት ትራ፣ ምን አለሽ ተራ፣ እና ኮርቻ ተራ
-                የተባሉ ቦታዎችን ከአስጎብኚዎ ጋር ይጎበኛሉ።
+                ገረልታ፡ ብመስሕብ ዝኾኑ ኣምባታት እትፍለጥ ቦታ እያ። እዞም ኣምባታት ንደለይቲ ጽውጽዋይን 
+                ተፈጥሮኣዊ ትርኢትን ዝስሕቡ እዮም። ብዙሓት ጥንታውያን ቤተ-ክርስትያናት ኣብዞም ኣምባታት ይርከባ።
               </p>
-              <a class="button" href="https://en.wikipedia.org/wiki/Addis_Mercato">ተጨማሪ ያንብቡ</a>
+              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
         </div>
       </section>
     </main>
-    <footer>
+
+    <footer id="contact">
       <form class="max-lg">
-        <h2>ቱሪዝም ኢትዮጵያን ያግኙ</h2>
+        <h2>ምስ ቱሪዝም ትግራይ ተራኸቡ</h2>
         <div>
-          <label for="name">ስም (የግድ የሚያስፈልግ)</label>
+          <label for="name">ሽም (ግድን ዘድሊ)</label>
           <input id="name" name="name" type="text" required />
         </div>
         <div>
-          <label for="email">የኢሜይል አድራሻዎት (የግድ የሚያስፈልግ)</label>
+          <label for="email">የሜይል (ግድን ዘድሊ)</label>
           <input id="email" name="email" type="email" required />
         </div>
         <div>
-          <label for="message">መልእክት (የግድ የሚያስፈልግ)</label>
+          <label for="message">መልእክቲ (ግድን ዘድሊ)</label>
           <textarea id="message" name="message" rows="5" cols="50" required></textarea>
         </div>
         <div>
-          <button type="submit" onclick="alert('አመሰግናለሁ!')">ላክ</button>
+          <button type="submit" onclick="alert('አቐንየለይ!')">ስደድ</button>
         </div>
       </form>
     </footer>
