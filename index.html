@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="assets/style/main.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script>
-    document.addEventListener('DOMContentLoaded', function() {      
-        document.querySelectorAll('.trips img').forEach(img => {
-            img.loading = 'lazy';
-            img.onerror = function() {
-                this.src = 'assets/images/placeholder-image.png';
-            }
-        });
-    });
-    </script>
+      document.addEventListener('DOMContentLoaded', function() {      
+          document.querySelectorAll('.trips img').forEach(img => {
+              img.loading = 'lazy';
+              img.onerror = function() {
+                  this.src = './assets/images/placeholder-image.png';
+                  this.alt = 'Image not found';
+              }
+          });
+      });
+      </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -56,14 +57,14 @@
                 ብኣኽሱም ሓወልቲ (Obelisk) ትፍለጥ። ኣብ ውሽጢ እዛ ከተማ ቤተ-ክርስትያን ጽዮን ማርያም፣ ናይ ሳባ ቤተ-መንግስቲ፣ 
                 ከምኡ'ውን ካልኦት ብዙሓት ታሪኻውያን ቦታታት ይርከቡ።
               </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+              <a class="button" href="https://en.wikipedia.org/wiki/Axum" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
               alt="ደብረ ዳሞ"
-              src="assets/images/historical/debre-damo.jpg"
+              src="assets/images/historical/debre-damo.jpg" loading="lazy"
             />
             <div class="summary">
               <h2>ደብረ ዳሞ</h2>
@@ -72,24 +73,42 @@
                 ዝተሃንጸት ኮይና፣ ናብ ደብረ ዳሞ ንምብጻሕ ብገመድ ጥራይ እዩ ዝካኣ። ደብረ ዳሞ ብጥንታዊ ኣገባብ ህንጻን ብሃይማኖታዊ 
                 ጽሑፋትን ትፍለጥ።
               </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+              <a class="button" href="https://en.wikipedia.org/wiki/Debre_Damo" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
               alt="የሃ ቅዱስ ሚካኤል"
-              src="assets/images/historical/yeha-temple.avif"
+              src="assets/images/historical/yeha-temple.jpg"
+              loading="lazy"
             />
             <div class="summary">
-              <h2>የሃ ቅዱስ ሚካኤል</h2>
+              <h2>የሃ</h2>
               <p>
-                የሃ፡ ኣብ ትግራይ ዝርከብ ዝቖየመ ህንጻ እዩ። እዚ ህንጻ ካብ ክርስቶስ ቅድሚ ልደት ብ700 ዓ.ም. ዝተሃንጸ 
-                ኮይኑ፣ ብጥንታዊ የመናዊ ስነ-ህንጻ ዝተሃንጸ እዩ። ሎሚ መዓልቲ ናይ ኦርቶዶክስ ቤተ-ክርስትያን እዩ።
-              </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+                የሃ፡ ካብ ኣኽሱም ብምብራቕ 50 ኪሎ ሜትር ርሒቓ ትርከብ፣ ቅድሚ ልደት ክርስቶስ ኣብ 5ይ ክፍለ ዘመን ዝተመስረተት ከተማ እያ። ኣብ የሃ ዝርከብ 
+                ዓቢይ መቅደስ (Great Temple) ነቲ ናይ ወርሒ ኣምላኽ ዝኾነ ኣልማቃህ ዝተሰርሐ ኮይኑ፣ ኣብ ጥቓ እቲ 
+                መቅደስ ዝርከብ ቤተ-ክርስትያን ልዕሊ 1000 ዓመት ዝገበሩ መጻሕፍቲ ዝሓዘ ሙዚየም ኣለዎ።</p>              
+              <a class="button" href="https://en.wikipedia.org/wiki/Yeha" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
+
+          <article>
+            <img
+              alt="ቤተ መንግስቲ ዮሃንስ 4ይ"
+              src="assets/images/historical/yohannes-palace.webp"
+              loading="lazy"
+            />
+            <div class="summary">
+              <h2>ቤተ መንግስቲ ዮሃንስ 4ይ</h2>
+              <p>
+                ኣብ መቐለ ዝርከብ ታሪኻዊ ቤተ-መንግስቲ፣ ብ1884 ዝተሃንጸ። እዚ ቤተ መንግስቲ ብንጉስ ዮሃንስ 4ይ 
+                ዝተሃንጸ ኮይኑ፣ ሎሚ ከም ሙዚየም ይጥቀመሉ። ኣብ ውሽጢ እዚ ሙዚየም ብዙሓት ታሪኻዊ ኣቑሑትን ካልእ ሰነዳትን ይርከቡ።
+              </p>
+              <a class="button" href="https://onlinelibrary.wiley.com/doi/full/10.1002/2475-8876.12253" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
+            </div>
+          </article>           
+        
         </div>
       </section>
 
@@ -98,33 +117,68 @@
         <div class="trips">
           <article>
             <img
-              alt="ኣቡነ የማታ"
-              src="assets/images/churches/abune-yemata.jpg"
+              alt="ኣቡነ የማጣ"
+              src="assets/images/churches/abune-yemata.jpg" loading="lazy"
             />
             <div class="summary">
-              <h2>ኣቡነ የማታ ጉህ</h2>
+              <h2>ኣቡነ የማጣ ጉሕ</h2>
               <p>
                 ኣብ ልዕሊ ዓቢይ ኣምባ ዝተሃንጸት ቤተ-ክርስትያን እያ። ናብዛ ቤተ-ክርስትያን ንምብጻሕ ብርቱዕ ጻዕሪ 
                 የድሊ። ኣብ ውሽጣ ዘለዉ ጥንታውያን ስእልታት ብጣዕሚ ብሉጻት እዮም።
               </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+              <a class="button" href="https://en.wikipedia.org/wiki/Abuna_Yemata_Guh" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
 
           <article>
             <img
               alt="ደብረ ጽዮን"
-              src="assets/images/churches/debre-tsion.jpg"
+              src="assets/images/churches/debre-tsion.jpg" loading="lazy"
             />
             <div class="summary">
               <h2>ደብረ ጽዮን</h2>
               <p>
-                ደብረ ጽዮን ካብተን ዝቖየማ ቤተ-ክርስትያናት ሓንቲ እያ። ብፍሉይ ናይ ግድግዳ ስእልታትን ጥንታዊ 
+                ደብረ ጽዮን ካብተን ዝቖደማ ቤተ-ክርስትያናት ሓንቲ እያ። ብፍሉይ ናይ ግድግዳ ስእልታትን ጥንታዊ 
                 መጻሕፍትን ትፍለጥ። እዛ ቤተ-ክርስትያን ብ10ይ ክፍለ ዘመን ዝተሃንጸት እያ።
               </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+              <a class="button" href="https://www.tourismtigrai.com/attraction/view/MjI=" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
           </article>
+
+          <article>
+            <img
+              alt="ደብረ ዳሞ"
+              src="assets/images/churches/mariam-korkor.jpg"
+              loading="lazy"
+            />
+            <div class="summary">
+              <h2>ማርያም ቆርቆር</h2>
+              <p>
+                ማርያም ቆርቆር ኣብ ገረኣልታ ዝርከብ ታሪኻዊት ቤተ-ክርስትያን እያ። እዛ ቤተ-ክርስትያን ኣብ 
+                ልዕሊ ዓቢይ ኣምባ ዝተሃንጸት ኮይና፣ ብፍሉይ ናይ ግድግዳ ስእልታትን ብኣገራሚ ናይ ህንጻ 
+                ስነጥበብን ትፍለጥ። ናብዛ ቤተ-ክርስትያን ንምብጻሕ ከቢድ ጻዕሪ የድሊ።
+              </p>
+              <a class="button" href="https://am.wikipedia.org/wiki/ደብረ_ማርያም_ቆርቆር" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
+            </div>
+          </article>
+
+          <article>
+            <img
+                alt="ኣል-ነጃሺ መስጊድ"
+                src="assets/images/historical/al-nejashi-mosque.jpg"
+                loading="lazy"
+            />
+            <div class="summary">
+                <h2>ኣል-ነጃሺ መስጊድ</h2>
+                <p>
+                    ኣል-ነጃሺ መስጊድ ኣብ ትግራይ ዝርከብ ታሪኻዊ መስጊድ እዩ። እዚ መስጊድ ኣብ ኣፍሪቃ 
+                    ካብ ዝቖደሙ መስጊዳት ሓደ ኮይኑ፣ ብ615 ዓ.ም. ዝተሃንጸ እዩ። እዚ መስጊድ ምስ መጀመርያ ናብ 
+                    ሃገር ሓበሻ ዝመጹ ሙስሊም ስደተኛታት ዝተተሓሓዘ ታሪኽ ኣለዎ። እቶም ስደተኛታት ብንጉስ ኣል-ነጃሺ 
+                    (ኣጽሓመ) ተቐቢሎም ዑቕባ ረኺቦም።
+                </p>
+                <a class="button" href="https://en.wikipedia.org/wiki/Al_Nejashi_Mosque" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
+            </div>
+        </article>
         </div>
       </section>
 
@@ -134,16 +188,51 @@
           <article>
             <img
               alt="ገረልታ"
-              src="assets/images/nature/gheralta.webp"
+              src="assets/images/nature/gheralta.jpg" loading="lazy"
             />
             <div class="summary">
-              <h2>ገረልታ ኣምባታት</h2>
+              <h2>ኣምባታት ገረኣልታ</h2>
               <p>
-                ገረልታ፡ ብመስሕብ ዝኾኑ ኣምባታት እትፍለጥ ቦታ እያ። እዞም ኣምባታት ንደለይቲ ጽውጽዋይን 
+                ገረኣልታ፡ ብመስሕብ ዝኾኑ ኣምባታት እትፍለጥ ቦታ እያ። እዞም ኣምባታት ንደለይቲ ጽውጽዋይን 
                 ተፈጥሮኣዊ ትርኢትን ዝስሕቡ እዮም። ብዙሓት ጥንታውያን ቤተ-ክርስትያናት ኣብዞም ኣምባታት ይርከባ።
               </p>
-              <a class="button" href="#">ተወሳኺ ሓበሬታ</a>
+              <a class="button" href="https://en.wikipedia.org/wiki/Gheralta" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
             </div>
+          </article>
+
+          <article>
+            <img
+              alt="ሓሸንገ ቃላይ"
+              src="assets/images/nature/hashenge-lake.jpg"
+              loading="lazy"
+            />
+            <div class="summary">
+              <h2>ሓሸንገ ቃላይ</h2>
+              <p>
+                ሓሸንገ ቃላይ ኣብ ደቡብ ምብራቕ መቐለ ዝርከብ ተፈጥሮኣዊ ቃላይ እዩ። እዚ ቃላይ ብዙሓት 
+                ዓይነታት ኣዕዋፍን ዓሳታትን ዝርከብዎ ኮይኑ፣ ንበጻሕቲ ብፍሉይ ዝስሕብ እዩ። ኣብ ከባቢኡ 
+                ዝርከቡ ጸሊም ኣፍራስ እውን ፍሉይ መስሕብ እዮም።
+              </p>
+              <a class="button" href="https://en.wikipedia.org/wiki/Lake_Ashenge" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
+            </div>
+          </article>
+
+          <article>
+            <img
+              alt="ኣድዋ ጎቦታት"
+              src="assets/images/nature/adwa-mountains.jpg"
+              loading="lazy"
+            />
+            <div class="summary">
+              <h2>ጎቦታት ኣድዋ</h2>
+              <p>
+                  ጎቦታት ኣድዋ ታሪኻውን ተፈጥሮኣውን ጥሙር ዝኾነ ቦታ እዩ። እዞም ጎቦታት ብ1ይ መጋቢት 1888 ዓ.ም. 
+                  ኢትዮጵያውያን ኣንጻር ጣልያን ዝተዋግእሉን ዝተዓወትሉን ታሪኻዊ ቦታ እዩ። እቶም ጎቦታት ሎሚ 
+                  ንደለይቲ ታሪኽን ተፈጥሮኣዊ ትርኢትን ዝስሕቡ ኮይኖም፣ ብዙሓት በጻሕቲ ነቲ ታሪኻዊ ቦታ ይበጽሕዎ። 
+                  ብፍላይ ኣብ ግዜ ክራማት እቲ ቦታ ብቖጽሊ ተሽፊኑ፣ ንደለይቲ ፎቶግራፍን ጉዕዞን ዝስሕብ እዩ።
+              </p>
+              <a class="button" href="https://en.wikipedia.org/wiki/Battle_of_Adwa" target="_blank" rel="noopener noreferrer">ተወሳኺ ሓበሬታ</a>
+          </div>
           </article>
         </div>
       </section>
@@ -168,6 +257,9 @@
           <button type="submit" onclick="alert('አቐንየለይ!')">ስደድ</button>
         </div>
       </form>
+      <div class="copyright">
+        <p>&copy; 2024 ቱሪዝም ትግራይ | Developed by <a href="https://yoseph.dev" target="_blank" rel="noopener noreferrer">yoseph.dev</a></p>
+      </div>
     </footer>
   </body>
 </html>
